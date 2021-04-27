@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Sundar sa code nahi hain
-        run: mvn clean install 
+        run: mvn dependency:resolve
   
       - name: kuch kaam karo itna wait ni karenge hum
         run: mvn install
