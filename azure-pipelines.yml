@@ -31,3 +31,7 @@ steps:
       # sonar.exclusions=**/*.bin
       sonar.projectKey=shatabdisingh_demo-project
       sonar.projectName=demo-project
+- task: SonarCloudAnalyze@1
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
